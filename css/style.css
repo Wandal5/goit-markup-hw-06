@@ -59,33 +59,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-/* убираем рамку браузера */
-/* a:active,
-a:focus {
-  outline: none;
-}
 
-input,
-textarea {
-  outline: none;
-}
-input:active,
-textarea:active {
-  outline: none;
-}
-:focus {
-  outline: none;
-}
-textarea {
-  resize: none;
-}
-textarea {
-  resize: vertical;
-}
-textarea {
-  resize: horizontal; */
-
-/* убираем рамку браузера */
 .team-item img {
   margin-bottom: 30px;
 }
@@ -414,7 +388,7 @@ body {
   transition: transform var(--transition-duration) var(--transition-function);
 }
 .modal-svg {
-  background-color: #188ce8;
+  background-color: var(--color-bg-hover-button-hero);
 }
 
 .form {
@@ -435,15 +409,6 @@ body {
   left: 12px;
 }
 
-/* label:before {
-  content: "";
-  position: absolute;
-  left: 10px;
-  top: 0;
-  bottom: 0;
-  width: 20px;
-  background: url(./js/img_modal/email-modal.svg) center / contain no-repeat;
-} */
 .register-button {
   text-align: center;
   display: block;
@@ -454,13 +419,6 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
-/* .input-order{
-  justify-content: center;
-  margin-bottom:30px;
-  align-items: center;
-  resize: none;
-} */
 
 /* чекбокс */
 
@@ -805,13 +763,12 @@ body {
   background-color: var(--color-white);
   border-radius: 50%;
   outline: none;
-  transition-property: background-color;
-  transition: var(--transition-duration) var(--transition-function);
+  transition: background-color var(--transition-duration) var(--transition-function);
 }
 
 .socials-icon {
   fill: var(--color-social-links);
-  transition: background-colo var(--transition-duration) var(--transition-function),
+  transition: background-color var(--transition-duration) var(--transition-function),
     fill var(--transition-duration) var(--transition-function);
 }
 
