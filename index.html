@@ -381,7 +381,7 @@
         </address>
       </div>
       <div class="footer-social-list list">
-        <p class="footer-social-title">ПРИСОЕДИНЯЙТЕСЬ</p>
+        <p class="footer-social-title">Присоединяйтесь</p>
         <ul class="socials list">
           <li class="socials-item">
             <a class="socials-link link" href="" target="_blank" rel="noopener noreferrer" aria-label="instagram">
@@ -413,8 +413,8 @@
           </li>
         </ul>
       </div>
-      <div>
-        <p class="footer-form-title">Подпишитесь на рассылку</p>
+      <div class="footer-subscribe">
+        <p class="footer-social-title">Подпишитесь на рассылку</p>
         <form class="footer-form">
           <input type="email" class="footer-form-input" name="email" placeholder="E-mail" required>
           <button class="footer-button hero-button" type="submit">Подписаться
@@ -439,29 +439,33 @@
 
         <label class="form-field" for="name">
           <span class="form-label">Имя</span>
+          <span class = "form-block">
           <input type="text" class="form-input" id="name" required minlength="3">
           <svg class="register-form-icon" width="18" height="18">
             <use href="./js/img_modal/modal-sybol.svg#iconperson-black"></use>
           </svg>
-
+        </span>
         </label>
 
 
         <label class="form-field" for="telephone">
           <span class="form-label">Телефон</span>
+          <span class = "form-block">
           <input type="tel" class="form-input" name="phone" id="telephone" required maxlength="13">
           <svg class="register-form-icon" width="18" height="18">
             <use href="./js/img_modal/modal-sybol.svg#iconphone-black"></use>
           </svg>
+        </span>
         </label>
 
         <label class="form-field" for="mail">
           <span class="form-label">Почта</span>
+          <span class = "form-block">
           <input type="email" class="form-input" name="mail" id="mail" required>
-
-          <svg class="register-form-icon" width="18" height="18">
+              <svg class="register-form-icon" width="18" height="18">
             <use href="./js/img_modal/modal-sybol.svg#iconemail-black"></use>
           </svg>
+          </span>
         </label>
 
         <label for="coment" class="form-field">
@@ -470,21 +474,16 @@
             placeholder="Введите текст"></textarea>
         </label>
       </div>
-    </form>
-    <div class="agree">
       <label class="label-checkbox">
         <input class="checkbox" type="checkbox" name="checkbox">
         <span class="checkbox-icon"></span>
-        <span class="checkbox-span">Соглашаюсь с рассылкой и принимаю <a href="#order-agree">Условия
+        <span class="checkbox-span">Соглашаюсь с рассылкой и принимаю <a class="blue" href="#order-agree">Условия
             договора</a></span>
       </label>
-    </div>
-    <label class="reg-btn">
-      <button class="register-button hero-button" type="submit">Отправить</button>
-    </label>
-
-
-
+   
+      <button class="hero-button" type="submit">Отправить</button>
+ </form>
+<!-- close-modal-button -->
     <button class="modal-close-button" data-modal-close>
       <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="15" cy="15" r="15" fill="#fff" />
